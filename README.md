@@ -4,8 +4,8 @@ Specifically, all of the following are included:
 Selected Dependencies: Core: - DevTools  
                        Web: - Web  
                        Template Engines: - Thymeleaf  
-                       SQl: - JPA  
-                            - H2  
+                       SQL: - JPA  
+                              - H2  
                        Project Lombok  
 Plugins: - Spring Boot Maven Plugin  
          - Maven Failsafe Plugin (Integration Tests)  
