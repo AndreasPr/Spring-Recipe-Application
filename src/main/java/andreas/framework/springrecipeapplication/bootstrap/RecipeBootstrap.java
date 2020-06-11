@@ -108,13 +108,13 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tunaPastaRecipe.setPrepTime(10);
         tunaPastaRecipe.setCookTime(0);
         tunaPastaRecipe.setDifficulty(Difficulty.EASY);
-        tunaPastaRecipe.setDirections("Step 1\n" +
-                "Cook pasta according to package directions, omitting salt and fat; drain. Cool about 10 minutes.\n" +
+        tunaPastaRecipe.setDirections("Step 1" + "\n" +
+                "Cook pasta according to package directions, omitting salt and fat; drain. Cool about 10 minutes." +
                 "\n" +
-                "Step 2\n" +
-                "Meanwhile, stir together mayonnaise, yogurt, dill, lemon juice, water, mustard, salt, pepper, and garlic in a large bowl until thoroughly combined.\n" +
+                "Step 2" +
+                "Meanwhile, stir together mayonnaise, yogurt, dill, lemon juice, water, mustard, salt, pepper, and garlic in a large bowl until thoroughly combined." +
                 "\n" +
-                "Step 3\n" +
+                "Step 3" +
                 "Fold cooled pasta, celery, peas, and tuna into mayonnaise mixture until thoroughly coated. Serve at room temperature or chilled. Garnish with more dill.");
 
         Notes tunaPastaNotes = new Notes();
@@ -143,7 +143,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tunaPastaRecipe.addIngredient(new Ingredient("cup plain whole-milk Greek yogurt", new BigDecimal(.5), cupUom));
         tunaPastaRecipe.addIngredient(new Ingredient("chopped fresh dill, plus more for garnish", new BigDecimal(1), tableSpoonUom));
 
-
+        tunaPastaRecipe.setServings(4);
+        tunaPastaRecipe.setUrl("http://testandreas.com");
+        tunaPastaRecipe.setSource("Andreas Recipes");
 
         tunaPastaRecipe.getCategories().add(americanCategory);
         tunaPastaRecipe.getCategories().add(greekCategory);
@@ -193,6 +195,10 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
         deviledEggRecipe.getCategories().add(americanCategory);
         deviledEggRecipe.getCategories().add(italianCategory);
+
+        deviledEggRecipe.setSource("Andreas Recipes");
+        deviledEggRecipe.setUrl("http://testandreas.com");
+        deviledEggRecipe.setServings(5);
 
         recipes.add(deviledEggRecipe);
 

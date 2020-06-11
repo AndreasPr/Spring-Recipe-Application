@@ -8,6 +8,7 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.ui.Model;
 
@@ -40,8 +41,10 @@ class IndexControllerTest {
     public void testMockMVC() throws Exception{
         //Now, we have the MockMVC using the Mock Servlet Context - It is running to build a pattern
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(indexController).build();
-        mockMvc.perform(get("/")).andExpect(status().isOk()).andExpect(view().name("index"));
-    }
+        mockMvc.perform(get("/"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("index"));
+   }
 
     @Test
     void getIndexPage() {
