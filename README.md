@@ -13,7 +13,7 @@ Application created with Spring Boot which helps you to manage your recipes and 
 ## General Info
 It combines a lot of technologies based on CRUD Operations with Spring MVC and Thymeleaf as template engine to manage your recipes in order to see the functionalities and the features of the Spring Framework.
 
-## Technologies - Scope of functionalities
+## Technologies
 * Spring Boot
 * Spring Web
 * Spring MVC 
